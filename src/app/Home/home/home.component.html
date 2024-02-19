@@ -1,0 +1,400 @@
+<!-- Recipes -->
+<ul>
+  <li *ngFor="let food of foods">
+    <img src="{{ food.imgUrl }}" />
+  </li>
+</ul>
+<section class="projects p-5 text-left">
+  <div class="tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane fade show active"
+      id="nav-all"
+      role="tabpanel"
+      aria-labelledby="Recipes-tab"
+    >
+      <div class="container">
+        <!-- Row 1 -->
+        <div class="row">
+          <!-- Col 1 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <div class="card-img">
+                <div class="icon-top">
+                  <button
+                    type="button"
+                    class="btn"
+                    [routerLink]="['/favorites']"
+                  >
+                    <fa-icon [icon]="faHeart"></fa-icon>
+                  </button>
+                </div>
+                <a routerLink="/recipeDetails"
+                  ><img
+                    class="card-img-top img-fluid"
+                    src="assets/1.jpg"
+                    alt="Card image cap"
+                /></a>
+              </div>
+              <div class="card-body">
+                <a routerLink="/recipeDetails"><h3>Ice Cream 1</h3></a>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet excepturi iure magnam aspernatur laboriosam ex
+                  recusandae corporis veritatis officia eos illo harum, dolores
+                  eaque ab porro. Quam eaque alias nemo.
+                </p>
+                <hr />
+                <div class="icon">
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faClock"></fa-icon>
+                  </button>
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faThumbsUp"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Col 2 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <div class="card-img">
+                <div class="icon-top">
+                  <button
+                    type="button"
+                    class="btn"
+                    [routerLink]="['/favorites']"
+                  >
+                    <fa-icon [icon]="faHeart"></fa-icon>
+                  </button>
+                </div>
+                <a routerLink="/recipeDetails">
+                  <img
+                    class="card-img-top img-fluid"
+                    src="assets/5.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+              <div class="card-body">
+                <a routerLink="/recipeDetails">
+                  <h3>Ice Cream 2</h3>
+                </a>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                  voluptate dolores beatae optio, qui, at officiis modi
+                  aspernatur eligendi repellendus quae. Molestias ducimus
+                  accusamus beatae veritatis quibusdam odio nulla veniam.
+                </p>
+                <hr />
+                <div class="icon">
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faClock"></fa-icon>
+                  </button>
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faThumbsUp"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Col 3 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 20rem">
+              <div class="card-img">
+                <div class="icon-top">
+                  <button
+                    type="button"
+                    class="btn"
+                    [routerLink]="['/favorites']"
+                  >
+                    <fa-icon [icon]="faHeart"></fa-icon>
+                  </button>
+                </div>
+                <a routerLink="/recipeDetails">
+                  <img
+                    class="card-img-top img-fluid"
+                    src="assets/6.jpg"
+                    alt="Card image cap"
+                  />
+                </a>
+              </div>
+              <div class="card-body">
+                <a routerLink="/recipeDetails">
+                  <h3>Ice Cream 3</h3>
+                </a>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates nisi totam maxime corrupti. Incidunt tempora quas
+                  quis! Culpa architecto dolore repellat unde numquam quo,
+                  distinctio dicta non molestiae perferendis aliquam!
+                </p>
+                <hr />
+                <div class="icon">
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faClock"></fa-icon>
+                  </button>
+                  <button type="button" class="btn">
+                    <fa-icon [icon]="faThumbsUp"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Row 2  -->
+        <!-- <div class="row"> -->
+        <!-- Col 4 -->
+        <!-- <div class="col-md-4"> -->
+        <!-- <div class="card" style="width: 20rem">
+          <div class="card-img">
+            <div class="icon-top">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faHeart"></fa-icon>
+              </button>
+            </div>
+            <a routerLink="/recipeDetails"
+                  >
+            <img
+              class="card-img-top img-fluid"
+              src="assets/7.jpg"
+              alt="Card image cap"
+            />
+          </a>
+          </div>
+          <div class="card-body">
+            <a routerLink="/recipeDetails"
+                  >
+                  <h3>Ice Cream 4</h3>
+          </a>
+                  <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              excepturi iure magnam aspernatur laboriosam ex recusandae corporis
+              veritatis officia eos illo harum, dolores eaque ab porro. Quam
+              eaque alias nemo.
+            </p>
+            <hr />
+            <div class="icon">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faClock"></fa-icon>
+              </button>
+              <button type="button" class="btn">
+                <fa-icon [icon]="faThumbsUp"></fa-icon>
+              </button>
+            </div>
+          </div>
+        </div> -->
+        <!-- </div> -->
+        <!-- Col 5 -->
+        <!-- <div class="col-md-4"> -->
+        <!-- <div class="card" style="width: 20rem">
+          <div class="card-img">
+            <div class="icon-top">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faHeart"></fa-icon>
+              </button>
+            </div>
+            <a routerLink="/recipeDetails"
+                  >
+            <img
+              class="card-img-top img-fluid"
+              src="assets/5.jpg"
+              alt="Card image cap"
+            />
+          </a>
+          </div>
+          <div class="card-body">
+            <a routerLink="/recipeDetails"
+                  >
+                  <h3>Ice Cream 5</h3>
+          </a>
+                  <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              voluptate dolores beatae optio, qui, at officiis modi aspernatur
+              eligendi repellendus quae. Molestias ducimus accusamus beatae
+              veritatis quibusdam odio nulla veniam.
+            </p>
+            <hr />
+            <div class="icon">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faClock"></fa-icon>
+              </button>
+              <button type="button" class="btn">
+                <fa-icon [icon]="faThumbsUp"></fa-icon>
+              </button>
+            </div>
+          </div>
+        </div> -->
+        <!-- </div> -->
+        <!-- Col 6 -->
+        <!-- <div class="col-md-4"> -->
+        <!-- <div class="card" style="width: 20rem">
+          <div class="card-img">
+            <div class="icon-top">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faHeart"></fa-icon>
+              </button>
+            </div>
+            <a routerLink="/recipeDetails"
+                  >
+            <img
+              class="card-img-top img-fluid"
+              src="assets/6.jpg"
+              alt="Card image cap"
+            />
+          </a>
+          </div>
+          <div class="card-body">
+            <a routerLink="/recipeDetails"
+                  >
+            <h3>Ice Cream 6</h3>
+          </a>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates nisi totam maxime corrupti. Incidunt tempora quas quis!
+              Culpa architecto dolore repellat unde numquam quo, distinctio
+              dicta non molestiae perferendis aliquam!
+            </p>
+            <hr />
+            <div class="icon">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faClock"></fa-icon>
+              </button>
+              <button type="button" class="btn">
+                <fa-icon [icon]="faThumbsUp"></fa-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div> -->
+
+        <!-- Row 3 -->
+        <!-- <div class="row"> -->
+        <!-- Col 7 -->
+        <!-- <div class="col-md-4"> -->
+        <!-- <div class="card" style="width: 20rem">
+          <div class="card-img">
+            <div class="icon-top">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faHeart"></fa-icon>
+              </button>
+            </div>
+            <a routerLink="/recipeDetails"
+                  >
+            <img
+              class="card-img-top img-fluid"
+              src="assets/7.jpg"
+              alt="Card image cap"
+            />
+          </a>
+          </div>
+          <div class="card-body">
+            <a routerLink="/recipeDetails"
+                  >
+                  <h3>Ice Cream 7</h3>
+          </a>
+                  <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              excepturi iure magnam aspernatur laboriosam ex recusandae corporis
+              veritatis officia eos illo harum, dolores eaque ab porro. Quam
+              eaque alias nemo.
+            </p>
+            <hr />
+            <div class="icon">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faClock"></fa-icon>
+              </button>
+              <button type="button" class="btn">
+                <fa-icon [icon]="faThumbsUp"></fa-icon>
+              </button>
+            </div>
+          </div>
+        </div> -->
+        <!-- </div> -->
+        <!-- Col 8 -->
+        <!-- <div class="col-md-4"> -->
+        <!-- <div class="card" style="width: 20rem">
+          <div class="card-img">
+            <div class="icon-top">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faHeart"></fa-icon>
+              </button>
+            </div>
+            <a routerLink="/recipeDetails"
+                  >
+            <img
+              class="card-img-top img-fluid"
+              src="assets/5.jpg"
+              alt="Card image cap"
+            />
+          </a>
+          </div>
+          <div class="card-body">
+            <a routerLink="/recipeDetails"
+                  >
+                  <h3>Ice Cream 8</h3>
+          </a>
+                  <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              voluptate dolores beatae optio, qui, at officiis modi aspernatur
+              eligendi repellendus quae. Molestias ducimus accusamus beatae
+              veritatis quibusdam odio nulla veniam.
+            </p>
+            <hr />
+            <div class="icon">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faClock"></fa-icon>
+              </button>
+              <button type="button" class="btn">
+                <fa-icon [icon]="faThumbsUp"></fa-icon>
+              </button>
+            </div>
+          </div>
+        </div> -->
+        <!-- </div> -->
+        <!-- Col 9 -->
+        <!-- <div class="col-md-4"> -->
+        <!-- <div class="card" style="width: 20rem">
+          <div class="card-img">
+            <div class="icon-top">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faHeart"></fa-icon>
+              </button>
+            </div>
+            <a routerLink="/recipeDetails"
+                  >
+            <img
+              class="card-img-top img-fluid"
+              src="assets/6.jpg"
+              alt="Card image cap"
+            /></a>
+          </div>
+          <div class="card-body">
+            <a routerLink="/recipeDetails"
+                  >
+                  <h3>Ice Cream 9</h3>
+          </a>
+                  <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates nisi totam maxime corrupti. Incidunt tempora quas quis!
+              Culpa architecto dolore repellat unde numquam quo, distinctio
+              dicta non molestiae perferendis aliquam!
+            </p>
+            <hr />
+            <div class="icon">
+              <button type="button" class="btn">
+                <fa-icon [icon]="faClock"></fa-icon>
+              </button>
+              <button type="button" class="btn">
+                <fa-icon [icon]="faThumbsUp"></fa-icon>
+              </button>
+            </div>
+          </div>
+        </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</section>

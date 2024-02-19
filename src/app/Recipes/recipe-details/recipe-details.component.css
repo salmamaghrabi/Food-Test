@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+h2 
+{
+    font-weight: 700;
+    font-size: 2.5em;
+}
+h3
+{
+    font-size: 1.5em;
+    font-weight: 700;
+    color:#444444; 
+    
+}
+
+.nav-logo img{
+    width:60px;
+    height: 60px;
+}
+.navbar-brand{
+    margin-left: 25px;
+    color: #fff;
+}
+.navbar-nav{
+    margin-right: 30px;
+}
+.nav-item .nav-link
+{
+    color: #fff;
+}
+.nav-item :hover
+{
+    color:#af2424;
+}
+.noun
+{
+    margin-top: 180px;
+}
+
+
+.mt-5
+{
+    margin-left: 5% !important ;
+}
+.skills {
+    margin-left: 10% !important;
+    margin-bottom: 5% ;
+}
+.icon i
+{
+    border-radius: 1px;
+    border: 1px;
+    border-style: solid;
+    border-color: #444444;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 10px;
+    color:#444444;
+}
+.icon i:hover{
+    color:#fff;
+    background-color: #ec3237;
+    border-color: #ec3237}
